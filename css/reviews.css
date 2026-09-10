@@ -2,6 +2,7 @@
   padding-bottom: 120px;
 }
 .reviews-title {
+  margin-bottom: 90px;
 }
 .reviews-list {
   display: flex;
@@ -9,6 +10,7 @@
   gap: 28px;
 }
 .reviews-item {
+  position: relative;
   margin-bottom: 90px;
   width: calc((100% - 28px * 2) / 3);
 
@@ -19,6 +21,10 @@
   box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
 }
 .reviews-avatar {
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .reviews-author {
     margin-bottom: 24px;

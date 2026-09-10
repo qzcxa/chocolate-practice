@@ -70,7 +70,6 @@ address {
   max-width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
-
 }
 .logo {
   display: inline-flex;
@@ -103,17 +102,30 @@ address {
 
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
-.socials-light .socials-link  {
-  background-color: #fff;
+.socials-light .socials-link {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.socials-light .socials-icon {
+  color: #fff;
 }
 .socials-link:hover,
 .socials-link:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1);
+  border-color: 1px solid rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
-}
+  color: #111;
 
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  color: #fd9222;
+}
 .btn {
   border-radius: 100px;
   padding: 14px 40px;
@@ -121,6 +133,9 @@ address {
 
   background-color: transparent;
   border: 1px solid transparent;
+
+  transition: 300ms ease-out;
+  transition-property: color, border-color, background-color;
 }
 .btn-filled {
   color: #fff;
@@ -128,7 +143,7 @@ address {
 }
 .btn-filled:hover,
 .btn-fille:focus {
-  background: rgba(253, 146, 34, 0.1);
+  background-color: rgba(253, 146, 34, 0.1);
   color: #fd9222;
 }
 .btn-outline {

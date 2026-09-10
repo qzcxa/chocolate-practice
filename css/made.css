@@ -27,6 +27,23 @@
 }
 .made-list {
 }
+.made-item{
+  display: flex;
+  gap: 8px;
+}
 .made-item:not(:last-child) {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
+}
+.made-item::before {
+  content: "";
+  flex-shrink: 0;
+
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+
+  display: inline-block;
 }

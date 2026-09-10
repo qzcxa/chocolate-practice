@@ -6,8 +6,8 @@
   align-items: center;
 }
 .main-nav {
-    margin-left: auto;
-    margin-right: 122px;
+  margin-left: auto;
+  margin-right: 122px;
 }
 .main-nav-list {
   display: flex;
@@ -17,11 +17,27 @@
 .main-nav-item {
 }
 .main-nav-link {
+  position: relative;
   display: block;
   padding: 11px 0px;
   font-weight: 500;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
+.main-nav-link:focus,
+.main-nav-link.current {
   color: #fd9222;
+}
+.main-nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #fd9222;
 }
