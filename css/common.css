@@ -36,6 +36,12 @@ address {
 .img {
   display: block;
 }
+
+/* helper class*/
+.hide {
+  display: none !important;
+}
+
 /*Base style*/
 .sr-only {
   position: absolute;
@@ -51,43 +57,91 @@ address {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 .section-title {
-  max-width: 412px;
-  margin: 0 auto 50px;
+  max-width: 284px;
+  margin: 0 auto 32px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+
+  font-size: 20px;
+  line-height: 1.2;
+
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+
+
+}
+@media only screen and (min-width: 768px) {
+  .section-title {
+    margin: 0 auto 50px;
+    max-width: 412px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .accent {
   color: #fd9222;
 }
 .container {
-  max-width: 1168px;
-  padding: 0 16px;
+  min-width: 320px;
+  max-width: 375px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 16px;
+  }
 }
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1168px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
 .logo-icon {
 }
 /*Socials*/
 .socials {
+  gap: 4px;
   display: flex;
   gap: 14px;
 }
+
 .socials-item {
   width: 40px;
   height: 40px;
@@ -128,14 +182,16 @@ address {
 }
 .btn {
   border-radius: 100px;
-  padding: 14px 40px;
   font-weight: 600;
+  padding: 12px 26px;
 
   background-color: transparent;
   border: 1px solid transparent;
 
   transition: 300ms ease-out;
   transition-property: color, border-color, background-color;
+
+  /* padding: 14px 40px; */
 }
 .btn-filled {
   color: #fff;
@@ -167,4 +223,10 @@ address {
 .secondary:focus {
   color: #fff;
   background: #fd9222;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header .socials {
+    display: none;
+  }
 }
