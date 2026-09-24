@@ -35,12 +35,14 @@ address {
 }
 .img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* helper class*/
-.hide {
+/* .hide {
   display: none !important;
-}
+} */
 
 /*Base style*/
 .sr-only {
@@ -80,8 +82,6 @@ address {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-
-
 }
 @media only screen and (min-width: 768px) {
   .section-title {
@@ -100,8 +100,8 @@ address {
   margin: 0 auto;
   padding: 0 20px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -192,6 +192,11 @@ address {
   transition-property: color, border-color, background-color;
 
   /* padding: 14px 40px; */
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 14px 40px;
+  }
 }
 .btn-filled {
   color: #fff;

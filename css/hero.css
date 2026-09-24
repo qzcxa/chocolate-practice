@@ -14,9 +14,13 @@
 
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
+
   background-image:
     linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.8)),
-    url(../images/hero/hero-bg.jpg);
+    image-set(
+      "../images/hero/hero-bg_mob.jpg" 1x,
+      "../images/hero/hero-bg_mob@2x.jpg" 2x
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,11 +28,23 @@
 @media only screen and (min-width: 768px) {
   .hero-wrapper {
     padding: 600px 40px 40px;
+      background-image:
+    linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.8)),
+    image-set(
+      "../images/hero/hero-bg_tab.jpg" 1x,
+      "../images/hero/hero-bg_tab@2x.jpg" 2x
+    );
   }
 }
 @media only screen and (min-width: 1168px) {
   .hero-wrapper {
     padding: 380px 40px 40px;
+      background-image:
+    linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.8)),
+    image-set(
+      "../images/hero/desk.jpg" 1x,
+      "../images/hero/hero-bg_desk@2x.jpg" 2x
+    );
   }
 }
 
@@ -41,7 +57,6 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-
 }
 @media only screen and (min-width: 768px) {
   .hero-title {
