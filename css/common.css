@@ -1,12 +1,11 @@
-/*Global style*/
+/* Global styles */
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
-  background: #fafafa;
+  background-color: #fafafa;
 }
 h1,
 h2,
@@ -19,9 +18,9 @@ p {
 }
 ol,
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 a {
   text-decoration: none;
@@ -33,18 +32,18 @@ button {
 address {
   font-style: normal;
 }
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* helper class*/
+/* Helper class */
 /* .hide {
   display: none !important;
 } */
 
-/*Base style*/
+/* Base styles */
 .sr-only {
   position: absolute;
   white-space: nowrap;
@@ -74,19 +73,18 @@ address {
 .section-title {
   max-width: 284px;
   margin: 0 auto 32px;
-  font-weight: 600;
 
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-
   letter-spacing: -0.03em;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .section-title {
-    margin: 0 auto 50px;
     max-width: 412px;
+    margin: 0 auto 50px;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -94,20 +92,20 @@ address {
 .accent {
   color: #fd9222;
 }
+
 .container {
   min-width: 320px;
   max-width: 375px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
 
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
-
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 32px;
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 @media screen and (min-width: 1168px) {
@@ -116,32 +114,32 @@ address {
     padding: 0 16px;
   }
 }
+
 .logo {
   display: inline-flex;
   align-items: center;
   gap: 2px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
-
 @media only screen and (min-width: 1168px) {
   .logo {
+    gap: 4px;
+
     font-size: 18px;
     line-height: 1.11;
   }
 }
-.logo-icon {
-}
-/*Socials*/
+
+/* Socials */
 .socials {
-  gap: 4px;
   display: flex;
   gap: 14px;
 }
-
 .socials-item {
   width: 40px;
   height: 40px;
@@ -168,10 +166,10 @@ address {
 }
 .socials-link:hover,
 .socials-link:focus {
-  border-color: 1px solid rgba(253, 146, 34, 0.1);
+  border-color: rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
-  color: #111;
+  color: #111111;
 
   transition: 300ms ease-out;
   transition-property: color;
@@ -180,18 +178,18 @@ address {
 .socials-link:focus .socials-icon {
   color: #fd9222;
 }
+
+/* Button */
 .btn {
-  border-radius: 100px;
-  font-weight: 600;
   padding: 12px 26px;
+  font-weight: 600;
 
   background-color: transparent;
   border: 1px solid transparent;
+  border-radius: 100px;
 
   transition: 300ms ease-out;
-  transition-property: color, border-color, background-color;
-
-  /* padding: 14px 40px; */
+  transition-property: color, background-color, border-color;
 }
 @media only screen and (min-width: 768px) {
   .btn {
@@ -203,11 +201,9 @@ address {
   background: #fd9222;
 }
 .btn-filled:hover,
-.btn-fille:focus {
-  background-color: rgba(253, 146, 34, 0.1);
+.btn-filled:focus {
   color: #fd9222;
-}
-.btn-outline {
+  background-color: rgba(253, 146, 34, 0.1);
 }
 .primary {
   border-color: #fff;
@@ -221,6 +217,7 @@ address {
 .secondary {
   display: block;
   margin: 0 auto;
+
   border-color: #fd9222;
   color: #111;
 }
@@ -228,10 +225,4 @@ address {
 .secondary:focus {
   color: #fff;
   background: #fd9222;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .header .socials {
-    display: none;
-  }
 }
